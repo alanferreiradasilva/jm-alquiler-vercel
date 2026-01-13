@@ -37,11 +37,10 @@
                     <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Flota Premium</h3>
                     <p class="text-gray-600">Vehículos en perfectas condiciones, mantenimiento riguroso y limpieza profesional.</p>
                 </div>
-                </div>
             </div>
-        <!-- </div>
-        </div> -->
+        </div>
     </section>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+</script>
