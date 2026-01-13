@@ -32,7 +32,7 @@ function closeMobile() {
         <RouterLink :to="{ name: 'home', hash: '#fleet' }" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">
           Flota
         </RouterLink>
-        <RouterLink :to="{ name: 'home', hash: '#servicios' }" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+        <RouterLink :to="{ name: 'home', hash: '#services' }" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">
           Servicios
         </RouterLink>
         <RouterLink :to="{ name: 'home', hash: '#contact' }" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">
