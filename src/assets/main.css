@@ -1,4 +1,14 @@
 @import "tailwindcss";
+
+
+
+/* Prevent horizontal overflow caused by wide elements on small screens */
+html, body {
+  overflow-x: hidden;
+}
+
+
+
 /* @import './base.css';
 
 #app {
@@ -33,4 +43,6 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-} */
+}*/
+
+
