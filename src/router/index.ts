@@ -28,9 +28,29 @@ const router = createRouter({
       component: () => import('../views/admin/VehiclesView.vue'),
     },
     {
+      path: '/admin/vehicles/new',
+      name: 'admin-vehicles-new',
+      component: () => import('../views/admin/vehicles/VehiclesForm.vue'),
+    },
+    {
+      path: '/admin/vehicles/edit/:id',
+      name: 'admin-vehicles-edit',
+      component: () => import('../views/admin/vehicles/VehiclesForm.vue'),
+    },
+    {
       path: '/admin/contracts',
       name: 'admin-contracts',
       component: () => import('../views/admin/contracts/ContractListView.vue'),
+    },
+    {
+      path: '/admin/contracts/new',
+      name: 'admin-contracts-new',
+      component: () => import('../views/admin/contracts/ContractFormView.vue'),
+    },
+    {
+      path: '/admin/contracts/edit/:id',
+      name: 'admin-contracts-edit',
+      component: () => import('../views/admin/contracts/ContractFormView.vue'),
     },
     {
       path: '/admin/reports',

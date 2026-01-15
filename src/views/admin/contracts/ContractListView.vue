@@ -194,12 +194,15 @@ function formatCurrency(value: number) {
           <h1 class="text-4xl font-bold text-gray-900 mb-2">{{ t('navAdmin.contracts') }}</h1>
           <p class="text-gray-600">{{ t('admin.contracts.description') }}</p>
         </div>
-        <button class="px-6 py-3 bg-[#600010] text-white rounded-lg font-semibold hover:bg-[#800020] transition-colors flex items-center gap-2">
+        <RouterLink
+          to="/admin/contracts/new"
+          class="px-6 py-3 bg-[#600010] text-white rounded-lg font-semibold hover:bg-[#800020] transition-colors flex items-center gap-2"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
           </svg>
           {{ t('admin.contracts.addNew') }}
-        </button>
+        </RouterLink>
       </div>
 
       <!-- Filters Card -->
@@ -354,12 +357,14 @@ function formatCurrency(value: number) {
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right">
                   <div class="flex items-center justify-end gap-2">
-                    <button class="p-2 text-gray-600 hover:text-[#600010] hover:bg-gray-100 rounded-lg transition-colors">
+                    <RouterLink
+                      :to="`/admin/contracts/edit/${contract.id}`"
+                      class="p-2 text-gray-600 hover:text-[#600010] hover:bg-gray-100 rounded-lg transition-colors"
+                    >
                       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
                       </svg>
-                    </button>
+                    </RouterLink>
                     <button class="p-2 text-gray-600 hover:text-[#600010] hover:bg-gray-100 rounded-lg transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
