@@ -2,8 +2,8 @@
     <section id="services" class="py-24 bg-[#FAFBFC]" data-testid="services-section">
         <div class="max-w-7xl mx-auto px-6" bis_skin_checked="1">
             <div class="text-center mb-16" style="opacity: 1; transform: none;" bis_skin_checked="1">
-                <span class="text-[#D4AF37] text-sm font-medium tracking-widest uppercase">Servicios</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mt-2">¿Por qué elegirnos?</h2>
+                <span class="text-[#D4AF37] text-sm font-medium tracking-widest uppercase">{{ t('home.services.badge') }}</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mt-2">{{ t('home.services.title') }}</h2>
             </div>
             <div class="grid md:grid-cols-3 gap-8" bis_skin_checked="1">
                 <div class="bg-white p-8 rounded-lg border border-gray-100 hover:border-[#D4AF37]/30 hover:shadow-xl transition-all duration-300" style="opacity: 1; transform: none;" bis_skin_checked="1">
@@ -12,8 +12,8 @@
                             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Seguro Completo</h3>
-                    <p class="text-gray-600">Todos nuestros vehículos incluyen seguro contra terceros. Protección total para tu tranquilidad.</p>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">{{ t('home.services.insurance.title') }}</h3>
+                    <p class="text-gray-600">{{ t('home.services.insurance.description') }}</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg border border-gray-100 hover:border-[#D4AF37]/30 hover:shadow-xl transition-all duration-300" style="opacity: 1; transform: none;" bis_skin_checked="1">
                     <div class="w-14 h-14 bg-[#600010]/10 rounded-lg flex items-center justify-center mb-6" bis_skin_checked="1">
@@ -22,8 +22,8 @@
                             <polyline points="12 6 12 12 16 14"></polyline>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Proceso Rápido</h3>
-                    <p class="text-gray-600">Reserva en menos de 5 minutos. Sistema digital de contratos y firma electrónica.</p>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">{{ t('home.services.fastProcess.title') }}</h3>
+                    <p class="text-gray-600">{{ t('home.services.fastProcess.description') }}</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg border border-gray-100 hover:border-[#D4AF37]/30 hover:shadow-xl transition-all duration-300" style="opacity: 1; transform: none;" bis_skin_checked="1">
                     <div class="w-14 h-14 bg-[#600010]/10 rounded-lg flex items-center justify-center mb-6" bis_skin_checked="1">
@@ -34,8 +34,8 @@
                             <circle cx="17" cy="17" r="2"></circle>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Flota Premium</h3>
-                    <p class="text-gray-600">Vehículos en perfectas condiciones, mantenimiento riguroso y limpieza profesional.</p>
+                    <h3 class="font-display text-xl font-bold text-gray-900 mb-3">{{ t('home.services.premiumFleet.title') }}</h3>
+                    <p class="text-gray-600">{{ t('home.services.premiumFleet.description') }}</p>
                 </div>
             </div>
         </div>
@@ -43,4 +43,7 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from '@/composables/useI18n'
+
+const { t } = useI18n()
 </script>

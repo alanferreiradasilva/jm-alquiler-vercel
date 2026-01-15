@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "fleet": "Fleet",
+    "services": "Services",
+    "contact": "Contact",
+    "profile": "Profile",
+    "admin": "Admin",
+    "exit": "Exit"
+  },
+  "navAdmin": {
+    "dashboard": "Dashboard",
+    "vehicles": "Vehicles",
+    "contracts": "Contracts",
+    "reports": "Reports",
+    "exit": "Exit"
+  },
+  "home": {
+    "jumbotron": {
+      "badge": "Premium Rental Experience",
+      "title": "Drive with",
+      "titleHighlight": "Elegance",
+      "titleEnd": "and Confidence",
+      "description": "Discover our exclusive fleet of vehicles. Personalized service, transparent pricing and the best rental experience in the region.",
+      "priceLabel": "From",
+      "priceValue": "R$ 195/day",
+      "quotationLabel": "Quote",
+      "quotationValue": "1 BRL = Gs. 1,226,455",
+      "viewFleet": "View Fleet",
+      "rating": "4.9 Rating",
+      "insurance": "Insurance Included",
+      "support": "24/7 Support"
+    },
+    "fleetIntro": {
+      "badge": "OUR FLEET",
+      "title": "Selected Vehicles",
+      "description1": "Each vehicle is carefully maintained to ensure your safety and comfort.",
+      "description2": "Prices in Reais (BRL) and Guaraníes (PYG) with updated quotation."
+    },
+    "services": {
+      "badge": "Services",
+      "title": "Why choose us?",
+      "insurance": {
+        "title": "Full Insurance",
+        "description": "All our vehicles include third-party insurance. Total protection for your peace of mind."
+      },
+      "fastProcess": {
+        "title": "Fast Process",
+        "description": "Book in less than 5 minutes. Digital contract system and electronic signature."
+      },
+      "premiumFleet": {
+        "title": "Premium Fleet",
+        "description": "Vehicles in perfect condition, rigorous maintenance and professional cleaning."
+      }
+    },
+    "contact": {
+      "badge": "CONTACT",
+      "title": "Ready to get started?",
+      "description": "Contact us for special reservations, corporate quotes or any inquiry.",
+      "whatsapp": "WhatsApp",
+      "location": "Location",
+      "locationValue": "Asunción, Paraguay",
+      "schedule": "Schedule",
+      "scheduleValue": "Mon-Fri: 8am-5pm | Sat-Sun: 8am-12pm",
+      "formTitle": "Send us a message",
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message",
+      "submitButton": "Send Message"
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "description": "Manage your fleet, contracts and reports from here",
+    "manage": "Manage",
+    "vehicles": {
+      "title": "Vehicles",
+      "description": "Manage your vehicle fleet, add new or update existing ones",
+      "addNew": "Add Vehicle",
+      "fuel": "Fuel",
+      "transmission": "Transmission",
+      "consumption": "Consumption",
+      "luggage": "Luggage"
+    },
+    "contracts": {
+      "title": "Contracts",
+      "description": "Manage rental contracts, bookings and documentation",
+      "addNew": "New Contract",
+      "filters": "Filters",
+      "clearFilters": "Clear filters",
+      "clientName": "Client",
+      "vehicle": "Vehicle",
+      "period": "Period",
+      "value": "Value",
+      "status": "Status",
+      "actions": "Actions",
+      "searchClient": "Search client...",
+      "searchVehicle": "Search vehicle...",
+      "dateFrom": "From",
+      "dateTo": "To",
+      "showing": "Showing",
+      "of": "of",
+      "contracts": "contracts",
+      "noResults": "No contracts found",
+      "tryDifferentFilters": "Try different filters"
+    },
+    "reports": {
+      "title": "Reports",
+      "description": "View statistics, revenue and performance analytics",
+      "monthlyRevenue": "Monthly Revenue",
+      "last6Months": "Last 6 months",
+      "total": "Total",
+      "clientsByCountry": "Clients by Country",
+      "distribution": "Distribution",
+      "totalClients": "Total Clients",
+      "topVehicles": "Top Rented Vehicles",
+      "mostRented": "Most popular",
+      "occupancyRate": "Occupancy Rate",
+      "fleetUtilization": "Fleet utilization",
+      "average": "Average",
+      "highest": "Highest",
+      "lowest": "Lowest"
+    },
+    "stats": {
+      "totalVehicles": "Total Vehicles",
+      "activeContracts": "Active Contracts",
+      "availableVehicles": "Available Vehicles",
+      "monthlyRevenue": "Monthly Revenue"
+    },
+    "vehicleStatus": {
+      "available": "Available",
+      "rented": "Rented",
+      "maintenance": "Maintenance"
+    },
+    "contractStatus": {
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  }
+}

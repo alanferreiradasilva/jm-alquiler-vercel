@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "fleet": "Flota",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "profile": "Perfil",
+    "admin": "Admin",
+    "exit": "Salir"
+  },
+  "navAdmin": {
+    "dashboard": "Panel",
+    "vehicles": "Veh\u00edculos",
+    "contracts": "Contratos",
+    "reports": "Reportes",
+    "exit": "Salir"
+  },
+  "home": {
+    "jumbotron": {
+      "badge": "Experiencia Premium en Alquiler",
+      "title": "Conduce con",
+      "titleHighlight": "Elegancia",
+      "titleEnd": "y Confianza",
+      "description": "Descubre nuestra exclusiva flota de vehículos. Servicio personalizado, precios transparentes y la mejor experiencia en alquiler de la región.",
+      "priceLabel": "Desde",
+      "priceValue": "R$ 195/día",
+      "quotationLabel": "Cotización",
+      "quotationValue": "1 BRL = Gs. 1,226,455",
+      "viewFleet": "Ver Flota",
+      "rating": "4.9 Rating",
+      "insurance": "Seguro Incluido",
+      "support": "24/7 Soporte"
+    },
+    "fleetIntro": {
+      "badge": "NUESTRA FLOTA",
+      "title": "Vehículos Seleccionados",
+      "description1": "Cada vehículo es cuidadosamente mantenido para garantizar tu seguridad y comodidad.",
+      "description2": "Precios en Reales (BRL) y Guaraníes (PYG) con cotización actualizada."
+    },
+    "services": {
+      "badge": "Servicios",
+      "title": "¿Por qué elegirnos?",
+      "insurance": {
+        "title": "Seguro Completo",
+        "description": "Todos nuestros vehículos incluyen seguro contra terceros. Protección total para tu tranquilidad."
+      },
+      "fastProcess": {
+        "title": "Proceso Rápido",
+        "description": "Reserva en menos de 5 minutos. Sistema digital de contratos y firma electrónica."
+      },
+      "premiumFleet": {
+        "title": "Flota Premium",
+        "description": "Vehículos en perfectas condiciones, mantenimiento riguroso y limpieza profesional."
+      }
+    },
+    "contact": {
+      "badge": "CONTACTO",
+      "title": "¿Listo para comenzar?",
+      "description": "Contáctanos para reservas especiales, cotizaciones para empresas o cualquier consulta.",
+      "whatsapp": "WhatsApp",
+      "location": "Ubicación",
+      "locationValue": "Asunción, Paraguay",
+      "schedule": "Horario",
+      "scheduleValue": "Lun-Vie: 8-17h | Sáb-Dom: 8-12h",
+      "formTitle": "Envíanos un mensaje",
+      "namePlaceholder": "Nombre",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Mensaje",
+      "submitButton": "Enviar Mensaje"
+    }
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "description": "Gestiona tu flota, contratos y reportes desde aquí",
+    "manage": "Gestionar",
+    "vehicles": {
+      "title": "Vehículos",
+      "description": "Administra tu flota de vehículos, añade nuevos o actualiza existentes",
+      "addNew": "Agregar Vehículo",
+      "fuel": "Combustible",
+      "transmission": "Cambio",
+      "consumption": "Consumo",
+      "luggage": "Bagagem"
+    },
+    "contracts": {
+      "title": "Contratos",
+      "description": "Gestiona contratos de alquiler, reservas y documentación",
+      "addNew": "Nuevo Contrato",
+      "filters": "Filtros",
+      "clearFilters": "Limpiar filtros",
+      "clientName": "Cliente",
+      "vehicle": "Vehículo",
+      "period": "Período",
+      "value": "Valor",
+      "status": "Estado",
+      "actions": "Acciones",
+      "searchClient": "Buscar cliente...",
+      "searchVehicle": "Buscar vehículo...",
+      "dateFrom": "Desde",
+      "dateTo": "Hasta",
+      "showing": "Mostrando",
+      "of": "de",
+      "contracts": "contratos",
+      "noResults": "No se encontraron contratos",
+      "tryDifferentFilters": "Intenta con diferentes filtros"
+    },
+    "reports": {
+      "title": "Reportes",
+      "description": "Visualiza estadísticas, ingresos y análisis de rendimiento",
+      "monthlyRevenue": "Ingresos Mensuales",
+      "last6Months": "Últimos 6 meses",
+      "total": "Total",
+      "clientsByCountry": "Clientes por País",
+      "distribution": "Distribución",
+      "totalClients": "Total Clientes",
+      "topVehicles": "Vehículos Más Alquilados",
+      "mostRented": "Los más populares",
+      "occupancyRate": "Tasa de Ocupación",
+      "fleetUtilization": "Utilización de la flota",
+      "average": "Promedio",
+      "highest": "Máxima",
+      "lowest": "Mínima"
+    },
+    "stats": {
+      "totalVehicles": "Total Vehículos",
+      "activeContracts": "Contratos Activos",
+      "availableVehicles": "Vehículos Disponibles",
+      "monthlyRevenue": "Ingresos Mensuales"
+    },
+    "vehicleStatus": {
+      "available": "Disponible",
+      "rented": "Alquilado",
+      "maintenance": "Mantenimiento"
+    },
+    "contractStatus": {
+      "active": "Activo",
+      "completed": "Completado",
+      "cancelled": "Cancelado"
+    }
+  }
+}

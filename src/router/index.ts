@@ -17,6 +17,26 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('../views/admin/AdminView.vue'),
+    },
+    {
+      path: '/admin/vehicles',
+      name: 'admin-vehicles',
+      component: () => import('../views/admin/VehiclesView.vue'),
+    },
+    {
+      path: '/admin/contracts',
+      name: 'admin-contracts',
+      component: () => import('../views/admin/contracts/ContractListView.vue'),
+    },
+    {
+      path: '/admin/reports',
+      name: 'admin-reports',
+      component: () => import('../views/admin/reports/ReportsListView.vue'),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

@@ -4,9 +4,9 @@
       <div class="grid gap-12 lg:grid-cols-2 items-start">
         <!-- Left: Contact info -->
         <div class="text-left">
-          <span class="text-[#D4AF37] text-sm font-semibold tracking-wider uppercase">CONTACTO</span>
-          <h2 class="text-4xl lg:text-5xl font-bold mt-4 mb-4">¿Listo para comenzar?</h2>
-          <p class="text-gray-400 max-w-xl mb-8">Contáctanos para reservas especiales, cotizaciones para empresas o cualquier consulta.</p>
+          <span class="text-[#D4AF37] text-sm font-semibold tracking-wider uppercase">{{ t('home.contact.badge') }}</span>
+          <h2 class="text-4xl lg:text-5xl font-bold mt-4 mb-4">{{ t('home.contact.title') }}</h2>
+          <p class="text-gray-400 max-w-xl mb-8">{{ t('home.contact.description') }}</p>
 
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
@@ -17,7 +17,7 @@
                         </svg>
                     </div>
                     <div bis_skin_checked="1">
-                        <p class="text-white/50 text-sm">WhatsApp</p>
+                        <p class="text-white/50 text-sm">{{ t('home.contact.whatsapp') }}</p>
                         <p class="text-white font-medium">+595 991 681 191</p>
                     </div>
                 </a>
@@ -35,8 +35,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
-                <div class="text-sm text-gray-400">Ubicación</div>
-                <div class="text-white font-semibold">Asunción, Paraguay</div>
+                <div class="text-sm text-gray-400">{{ t('home.contact.location') }}</div>
+                <div class="text-white font-semibold">{{ t('home.contact.locationValue') }}</div>
               </div>
             </li>
 
@@ -45,8 +45,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               </div>
               <div>
-                <div class="text-sm text-gray-400">Horario</div>
-                <div class="text-white font-semibold">Lun-Vie: 8-17h | Sáb-Dom: 8-12h</div>
+                <div class="text-sm text-gray-400">{{ t('home.contact.schedule') }}</div>
+                <div class="text-white font-semibold">{{ t('home.contact.scheduleValue') }}</div>
               </div>
             </li>
           </ul>
@@ -55,12 +55,12 @@
         <!-- Right: Contact form -->
         <div>
           <div class="bg-[#0b0b0b] border border-gray-800 rounded-xl p-6 shadow-inner">
-            <h3 class="text-xl font-semibold text-white mb-4">Envíanos un mensaje</h3>
+            <h3 class="text-xl font-semibold text-white mb-4">{{ t('home.contact.formTitle') }}</h3>
             <form @submit.prevent="handleSubmit" class="space-y-4">
-              <input type="text" v-model="name" placeholder="Nombre" class="w-full bg-[#0f0f0f] border border-gray-800 rounded px-4 py-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]" />
-              <input type="email" v-model="email" placeholder="Email" class="w-full bg-[#0f0f0f] border border-gray-800 rounded px-4 py-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]" />
-              <textarea v-model="message" rows="5" placeholder="Mensaje" class="w-full bg-[#0f0f0f] border border-gray-800 rounded px-4 py-3 text-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"></textarea>
-              <button type="submit" class="w-full bg-[#D4AF37] text-[#121212] font-medium py-3 rounded">Enviar Mensaje</button>
+              <input type="text" v-model="name" :placeholder="t('home.contact.namePlaceholder')" class="w-full bg-[#0f0f0f] border border-gray-800 rounded px-4 py-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]" />
+              <input type="email" v-model="email" :placeholder="t('home.contact.emailPlaceholder')" class="w-full bg-[#0f0f0f] border border-gray-800 rounded px-4 py-3 text-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]" />
+              <textarea v-model="message" rows="5" :placeholder="t('home.contact.messagePlaceholder')" class="w-full bg-[#0f0f0f] border border-gray-800 rounded px-4 py-3 text-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"></textarea>
+              <button type="submit" class="w-full bg-[#D4AF37] text-[#121212] font-medium py-3 rounded">{{ t('home.contact.submitButton') }}</button>
             </form>
           </div>
         </div>
@@ -71,6 +71,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from '@/composables/useI18n'
+
+const { t } = useI18n()
 
 const name = ref('')
 const email = ref('')
